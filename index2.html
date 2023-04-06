@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-transparent">
+    <div class="container-fluid">
+      <header class="row navbar navbar-light bg-light fixed-top">
+        <div
+          class="col-4 col-sm-4 col-md-6 d-flex align-items-center align-items-baseline mt-1 justify-content-center"
+        >
+          <i class="fab fa-instagram fa-2x"></i>
+          <h3 class="fst-italic ml-2">Instagram</h3>
+        </div>
+        <div
+          class="col-6 col-sm-6 col-md-4 d-flex justify-content-end text-nowrap"
+        >
+          <button
+            type="button"
+            class="btn btn-success"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
+            Create a new post
+          </button>
+        </div>
+
+        <div class="col-2 col-sm-2 col-md-2 mr-auto">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            ><i class="fas fa-cog"></i
+          ></a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="index2.html">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Log Out</a>
+          </div>
+        </div>
+      </header>
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <textarea
+                class="form-control mr-sm-2"
+                name=""
+                id=""
+                cols="50"
+                rows="5"
+              ></textarea>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <i class="fas fa-camera"></i>
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                data-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button type="button" class="btn btn-success">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-4 mb-2 bg-dark">
+      <div class="container d-flex justify-content-center">
+        <ul class="nav nav-pills mt-5" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a
+              class="nav-link btn btn-primary"
+              id="pills-home-tab"
+              href="index.html"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="false"
+            >
+              <i class="fas fa-square fa-xs"></i>
+            </a>
+          </li>
+          <li class="nav-item ml-3">
+            <a
+              class="nav-link active btn btn-primary"
+              href="index2.html?#"
+              id="pills-profile-tab"
+              data-toggle="pill"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              <i class="fas fa-th fa-xs"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-sm">
+          <a href="#"
+            ><img
+              class="border rounded"
+              src="https://snworksceo.imgix.net/dth/b28afb39-b840-489b-8461-7fa5e6caee13.sized-1000x1000.jpg?w=1500&ar=4%3A3&fit=crop&crop=faces&facepad=3&auto=format"
+              alt=""
+          /></a>
+        </div>
+        <div class="col-sm">
+          <a href="#"
+            ><img
+              class="border rounded"
+              src="https://www.runnerspace.com/members/images/67894/663834_full.jpg"
+              alt=""
+          /></a>
+        </div>
+        <div class="col-sm">
+          <a href="#"
+            ><img
+              class="border rounded"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2C6JGFzjhnXIbnCZ17Fke7IelksaVPx6KMjnLtaDHLg&s"
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-sm">
+          <a href="#"
+            ><img
+              class="border rounded"
+              src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"
+              alt=""
+          /></a>
+        </div>
+        <div class="col-sm">
+          <a href="#"
+            ><img
+              class="border rounded"
+              src="https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg"
+              alt=""
+          /></a>
+        </div>
+        <div class="col-sm">
+          <a href="#"
+            ><img
+              class="border rounded"
+              src="https://i.insider.com/5c005d9bac00e20fe169f725?width=700"
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-sm">
+          <a href="#"
+            ><img
+              class="border rounded"
+              src="https://media.istockphoto.com/id/1007763808/photo/portrait-of-handsome-latino-african-man.jpg?s=612x612&w=0&k=20&c=XPL1ukeC99OY8HBfNa_njDujOPf9Xz4yCEOo7O3evU0="
+              alt=""
+          /></a>
+        </div>
+        <div class="col-sm">
+          <a href="#"
+            ><img
+              class="border rounded"
+              src="https://www.planetware.com/wpimages/2019/11/india-best-places-to-visit-agra.jpg"
+              alt=""
+          /></a>
+        </div>
+        <div class="col-sm">
+          <a href="#"
+            ><img
+              class="border rounded"
+              src="https://media.istockphoto.com/id/527614247/photo/chihuahua-puppy-small-dog-with-crazy-troll-hair.jpg?s=612x612&w=0&k=20&c=uN60esEkOntBtHPWrUhusweVUOQFdKYssTLzFuwAM9A="
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

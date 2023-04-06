@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Feed/Grid</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/ced8f151d1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-transparent">
+    <div class="container-fluid">
+      <header class="row navbar navbar-light bg-light fixed-top">
+        <div
+          class="col-4 col-sm-4 col-md-6 d-flex align-items-center align-items-baseline mt-1 justify-content-center"
+        >
+          <i class="fab fa-instagram fa-2x"></i>
+          <h3 class="fst-italic ml-2">Instagram</h3>
+        </div>
+        <div
+          class="col-6 col-sm-6 col-md-4 d-flex justify-content-end text-nowrap"
+        >
+          <button
+            type="button"
+            class="btn btn-success"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
+            Create a new post
+          </button>
+        </div>
+
+        <div class="col-2 col-sm-2 col-md-2 mr-auto">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            ><i class="fas fa-cog"></i
+          ></a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="index2.html">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Log Out</a>
+          </div>
+        </div>
+      </header>
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <textarea
+                class="form-control mr-sm-2"
+                name=""
+                id=""
+                cols="50"
+                rows="5"
+              ></textarea>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <i class="fas fa-camera"></i>
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                data-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button type="button" class="btn btn-success">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-4 mb-2 bg-dark">
+      <div class="container d-flex justify-content-center">
+        <ul class="nav nav-pills mt-5" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a
+              class="nav-link active btn btn-primary"
+              id="pills-home-tab"
+              data-toggle="pill"
+              href="index.html?#"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="false"
+            >
+              <i class="fas fa-square fa-xs"></i>
+            </a>
+          </li>
+          <li class="nav-item ml-3">
+            <a
+              class="nav-link btn btn-primary"
+              href="index2.html"
+              id="pills-profile-tab"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              <i class="fas fa-th fa-xs"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="justify-content-center p-2">
+      <div class="row">
+        <div class="card container-fluid" style="width: 34rem">
+          <div class="justify-content-between d-flex">
+            <h3 class="card-title fw-bold p-2">My Crazy Dog Spark</h3>
+            <span class="p-2" style="color: #b5b2b1">08/26</span>
+          </div>
+          <img
+            src="data:image/jpeg;base64,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"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <a href=""><i class="fa-solid fa-heart fa-2x"></i></a>
+            <a href=""><i class="fa-solid fa-comment fa-2x"></i></a>
+            <a href=""
+              ><i class="fa-sharp fa-solid fa-paper-plane fa-2x"></i
+            ></a>
+            <p class="card-text">
+              Sample text goes here. Sample text goes here. Sample text goes
+              here. Sample text goes here. Sample text goes here. Sample text
+              goes here. Sample text goes here. Sample text goes here. Sample
+              text goes here.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="justify-content-center p-2">
+      <div class="row">
+        <div class="card container-fluid" style="width: 34rem">
+          <div class="justify-content-between d-flex">
+            <h3 class="card-title fw-bold p-2">A Drean Vacation</h3>
+            <span class="p-2" style="color: #b5b2b1">01/2023</span>
+          </div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2C6JGFzjhnXIbnCZ17Fke7IelksaVPx6KMjnLtaDHLg&s"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <a href=""><i class="fa-solid fa-heart fa-2x"></i></a>
+            <a href=""><i class="fa-solid fa-comment fa-2x"></i></a>
+            <a href=""
+              ><i class="fa-sharp fa-solid fa-paper-plane fa-2x"></i
+            ></a>
+            <p class="card-text">
+              Sample text goes here. Sample text goes here. Sample text goes
+              here. Sample text goes here. Sample text goes here. Sample text
+              goes here. Sample text goes here. Sample text goes here. Sample
+              text goes here.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="justify-content-center p-2">
+      <div class="row">
+        <div class="card container-fluid" style="width: 34rem">
+          <div class="justify-content-between d-flex">
+            <h3 class="card-title fw-bold p-2">A Great Track Event</h3>
+            <span class="p-2" style="color: #b5b2b1">01/2023</span>
+          </div>
+          <img
+            src="https://www.runnerspace.com/members/images/67894/663834_full.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <a href=""><i class="fa-solid fa-heart fa-2x"></i></a>
+            <a href=""><i class="fa-solid fa-comment fa-2x"></i></a>
+            <a href=""
+              ><i class="fa-sharp fa-solid fa-paper-plane fa-2x"></i
+            ></a>
+            <p class="card-text">
+              Sample text goes here. Sample text goes here. Sample text goes
+              here. Sample text goes here. Sample text goes here. Sample text
+              goes here. Sample text goes here. Sample text goes here. Sample
+              text goes here.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="justify-content-center p-2">
+      <div class="row">
+        <div class="card container-fluid" style="width: 34rem">
+          <div class="justify-content-between d-flex">
+            <h3 class="card-title fw-bold p-2"># Winning</h3>
+            <span class="p-2" style="color: #b5b2b1">01/2023</span>
+          </div>
+          <img
+            src="https://snworksceo.imgix.net/dth/b28afb39-b840-489b-8461-7fa5e6caee13.sized-1000x1000.jpg?w=1500&ar=4%3A3&fit=crop&crop=faces&facepad=3&auto=format"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <a href=""><i class="fa-solid fa-heart fa-2x"></i></a>
+            <a href=""><i class="fa-solid fa-comment fa-2x"></i></a>
+            <a href=""
+              ><i class="fa-sharp fa-solid fa-paper-plane fa-2x"></i
+            ></a>
+            <p class="card-text">
+              Sample text goes here. Sample text goes here. Sample text goes
+              here. Sample text goes here. Sample text goes here. Sample text
+              goes here. Sample text goes here. Sample text goes here. Sample
+              text goes here.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
